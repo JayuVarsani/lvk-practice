@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Moderator;
+use App\Models\PurchaseOrder;
 use App\Models\User;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,17 +16,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
+        Moderator::factory(100)->create();
+        PurchaseOrder::factory(10000)->create();
         User::factory()->create([
             'name' => 'admin',
-            'email' => 'admin@example.com',
-            'password'=>'123',
+            'email' => 'admin@gmail.com',
+            'type' => 'admin',
+            'password' => '123',
         ]);
-//        User::factory()->create([
-//            'name' => 'jayesh',
-//            'email' => 'varsanij638@gmail.com',
-//            'password'=>'123',
-//        ]);
+        User::factory()->create([
+            'name' => 'jayesh',
+            'email' => 'varsanij638@gmail.com',
+            'type' => 'admin',
+            'password' => '123',
+        ]);
+
     }
 }

@@ -15,7 +15,12 @@
         "vite": "^6.0"
     },
     "dependencies": {
-        "alpinejs": "^3.14.7",
-        "jquery": "^3.7.1"
+        "@popperjs/core": "^2.11.8",
+        "@types/datatables.net": "^1.10.28",
+        "alpinejs": "^3.14.8",
+        "bootstrap": "^5.3.3",
+        "jquery": "^3.7.1",
+        "jquery-validation": "^1.21.0",
+        "vite-plugin-static-copy": "^2.2.0"
     }
 }

@@ -32,7 +32,7 @@
                                 <button type="submit" id="kt_password_reset_submit" class="btn btn-primary me-4">
                                     <span class="indicator-label">{{__('app.panel.submit')}}</span>
                                 </button>
-                                <a href="{{ route('admin.login.index') }}"
+                                <a href="{{ route('login') }}"
                                    class="btn btn-light">{{__('app.panel.cancel')}}</a>
                             </div>
                         </form>

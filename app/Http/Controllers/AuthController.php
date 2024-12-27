@@ -30,7 +30,7 @@ class AuthController extends Controller
             return redirect()->route('admin.dashboard');
         }
         $this->flashAlert('Login failed!', 'danger');
-        return redirect()->route('admin.login.index');
+        return redirect()->route('login');
     }
 
     public function flashAlert($message = '', $type = 'success')
@@ -61,20 +61,14 @@ class AuthController extends Controller
         $request->reset()
             ? $this->flashAlert('Your password has been changed!', 'info')
             : $this->flashAlert('Something went wrong!!! Try again', 'danger');
-        return redirect()->route('admin.login.index');
+        return redirect()->route('login');
     }
 
-    //'$2y$12$GD8HoY4rNbxxewtUahniS.Xochh.fl163ol8ghlfObEb5L/HwOaoO'
-
-    public function dashboard()
-    {
-        return view('admin.dashboard');
-    }
 
     public function logout()
     {
         Auth::logout();
         session()->flush();
-        return redirect()->route('admin.login.index');
+        return redirect()->route('login');
     }
 }

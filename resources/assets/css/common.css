@@ -23,7 +23,7 @@
 
 
 .image-input-empty {
-    background-image: url('./../images/blank.svg');
+    background-image: url('../../images/blank.svg');
 }
 
 .action-div > * {

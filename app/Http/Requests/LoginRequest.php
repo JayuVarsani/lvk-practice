@@ -28,6 +28,6 @@ class LoginRequest extends FormRequest
         ];
     }
     public function authentication(){
-        return Auth::attempt($this->only('email','password'));
+        return Auth::guard('admin')->attempt($this->only('email','password'));
     }
 }
