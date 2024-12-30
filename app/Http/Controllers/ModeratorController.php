@@ -40,11 +40,6 @@ class ModeratorController extends Controller
         return view('moderator.moderator-table', ['title' => 'Moderator']);
     }
 
-    public function getData()
-    {
-
-    }
-
     public function create()
     {
         return view('moderator.create-moderator', ['title' => 'Create Moderator']);

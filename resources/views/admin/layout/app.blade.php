@@ -9,22 +9,19 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>
 
-    {{--        <link href="{{ asset('/storage/assets/mv/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>--}}
-    {{--    <link href="{{ asset('/storage/assets/mv/style.bundle.css') }}" rel="stylesheet" type="text/css"/>--}}
+
     @vite('resources/assets/css/app.css');
     @vite(['resources/assets/mv/plugins.bundle.css','resources/assets/mv/style.bundle.css']);
 
-    {{--    <link rel="stylesheet" href="{{ asset('/storage/assets/css/common.css') }}">--}}
-    {{--    <link rel="stylesheet" href="{{ asset('/storage/assets/css/datatables.bundle.css') }}">
-    --}}
     @vite('resources/assets/css/datatables.bundle.css');
 
     {{--sweet alert js--}}
     {{--    <script href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>--}}
     @vite('resources/assets/js/app.js');
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+{{--    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>--}}
+    @vite('resources/assets/css/daterangepicker.css')
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">--}}
 
     {{--    @yield('style')--}}
 
@@ -71,14 +68,14 @@
 <script src="{{ asset('/build/mv/datatables.bundle.js') }}"></script>
 
 @vite('resources/assets/js/app.js')
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>--}}
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" defer></script>
 
 {{--@vite(['resources/assets/js/jquery.validate.min.js'])--}}
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-{{--<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>--}}
+
+{{--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>--}}
 @yield('script')
 
-{{--@stack('footer')--}}
 </body>
 </html>

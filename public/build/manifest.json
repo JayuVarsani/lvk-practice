@@ -1,6 +1,6 @@
 {
   "resources/assets/css/app.css": {
-    "file": "assets/app-fRKQ8zeV.css",
+    "file": "assets/app-DfZqgj8Q.css",
     "src": "resources/assets/css/app.css",
     "isEntry": true
   },
@@ -9,8 +9,13 @@
     "src": "resources/assets/css/datatables.bundle.css",
     "isEntry": true
   },
+  "resources/assets/css/daterangepicker.css": {
+    "file": "assets/daterangepicker-DOZkI6Kt.css",
+    "src": "resources/assets/css/daterangepicker.css",
+    "isEntry": true
+  },
   "resources/assets/js/app.js": {
-    "file": "assets/app-DuKxZ1Vi.js",
+    "file": "assets/app-C-wahRXz.js",
     "name": "app",
     "src": "resources/assets/js/app.js",
     "isEntry": true,
@@ -19,7 +24,7 @@
     ]
   },
   "resources/assets/js/common.js": {
-    "file": "assets/common-CqQdvsRY.js",
+    "file": "assets/common-DMFHCb37.js",
     "name": "common",
     "src": "resources/assets/js/common.js",
     "isDynamicEntry": true

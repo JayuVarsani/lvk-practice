@@ -53,7 +53,7 @@
                         <div class="col-lg-9 fv-row">
                             <input type="text"
                                    name="password" id="password" class="form-control form-control-lg form-control-solid"
-                                   placeholder="Please enter password">
+                                   placeholder="Please enter password" autocomplete="off">
                             <x-error name="password"/>
                         </div>
                     </div>

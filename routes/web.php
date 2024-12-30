@@ -7,7 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ModeratorController;
 use App\Http\Controllers\PurchaseOrderController;
 
-Route::group(['middleware' => 'PreventBack'], function () {
+//Route::group(['middleware' => 'PreventBack'], function () {
 
     Route::get('/', [AuthController::class, 'login'])->name('login')->middleware(['IsAdmin']);
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -24,12 +24,6 @@ Route::group(['middleware' => 'PreventBack'], function () {
                 Route::get('/', [PurchaseOrderController::class, 'index'])->name('purchase-order');
             });
 
-            Route::group(['prefix' => 'purchase', 'as' => 'purchase.'], function () {
-                Route::get('/', [PurchaseOrderController::class, 'index'])->name('purchase-order');
-                Route::get('/export', [PurchaseOrderController::class, 'export'])->name('export');
-            });
-
-
             Route::group(['prefix' => 'profile', 'as' => 'profile.'], function () {
                 Route::get('/', [ProfileController::class, 'index'])->name('index');
                 Route::post('/', [ProfileController::class, 'update_profile'])->name('update-profile');
@@ -42,4 +36,5 @@ Route::group(['middleware' => 'PreventBack'], function () {
     });
     Route::get('/password/reset-password/{token}', [AuthController::class, 'resetPassword'])->name('password.reset');
     Route::post('/password/reset-password', [AuthController::class, 'resetPasswordPost'])->name('password.update');
-});
+//});
+Route::get('admin/purchase/export', [PurchaseOrderController::class, 'export'])->name('admin.purchase.export');

@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>
-{{--        @yield('title')--}}
-    </title>
+    <title>{{ $title?(ucwords($title).' | '.config('app.name')):config('app.name') }}</title>
     <link rel="shortcut icon" href="{{ asset('/storage/assets/images/logo/favicon.ico') }}"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>
 {{--    <link href="{{ asset('/storage/assets/mv/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>--}}

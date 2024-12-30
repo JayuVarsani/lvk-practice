@@ -19,7 +19,7 @@ class AuthController extends Controller
 {
     public function login()
     {
-        return view('admin.auth.login');
+        return view('admin.auth.login',['title'=>'Login']);
     }
 
     public function loginPost(LoginRequest $request)
@@ -40,7 +40,7 @@ class AuthController extends Controller
 
     public function forgotPassword()
     {
-        return view('admin.auth.forgot-password');
+        return view('admin.auth.forgot-password',['title'=>'Forgot Password']);
     }
 
     public function forgotPasswordPost(ForgotPasswordRequest $request)
@@ -53,7 +53,7 @@ class AuthController extends Controller
 
     public function resetPassword(Request $request)
     {
-        return view('admin.auth.reset-password', ['request' => $request]);
+        return view('admin.auth.reset-password', ['title'=>'Reset Password','request' => $request]);
     }
 
     public function resetPasswordPost(ResetPasswordRequest $request)

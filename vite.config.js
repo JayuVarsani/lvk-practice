@@ -8,11 +8,12 @@ export default defineConfig({
             input: [
                 'resources/assets/css/app.css',
                 'resources/assets/js/app.js',
-                // 'resources/assets/js/form-validation.js',    s',
+                // 'resources/assets/js/form-validation.js',
                 // 'resources/assets/images/logo/favicon.ico',
                 // 'resources/assets/images/logo/small-logo.png',
                 'resources/assets/mv/plugins.bundle.css',
                 'resources/assets/mv/style.bundle.css',
+                'resources/assets/css/daterangepicker.css',
                 // 'resources/assets/css/common.css',
                 'resources/assets/css/datatables.bundle.css',
                 'resources/assets/js/theme-mode.js',

@@ -12,7 +12,9 @@
         "php": "^8.2",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
+        "maatwebsite/excel": "*",
         "spatie/laravel-medialibrary": "^11.11",
+        "symfony/http-foundation": "^7.2",
         "yajra/laravel-datatables": "^11.0"
     },
     "require-dev": {

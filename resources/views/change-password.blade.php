@@ -3,7 +3,7 @@
     <div>
         <x-alert/>
         <div class="card mb-5 mb-xl-10">
-            <x-loader target="none"/>
+{{--            <x-loader target="none"/>--}}
             <div class="card-header border-0">
                 <div class="card-title m-0">
                     <h3 class="fw-bold m-0">{{__('admin.change-password.title')}}</h3>
@@ -21,7 +21,7 @@
                             <input type="text"
                                    name="currentPassword" id="oldPassword"
                                    class="form-control form-control-lg form-control-solid"
-                                   placeholder="Please enter Current password">
+                                   placeholder="Please enter Current password" autocomplete="off">
                             <x-error name="currentPassword"/>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                         <div class="col-lg-9 fv-row">
                             <input type="text"
                                    name="password" id="password" class="form-control form-control-lg form-control-solid"
-                                   placeholder="Please enter password">
+                                   placeholder="Please enter password" autocomplete="off">
                             <x-error name="password"/>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <input type="text"
                                    name="confirmPassword" id="confirmPassword"
                                    class="form-control form-control-lg form-control-solid"
-                                   placeholder="Please enter confirm password">
+                                   placeholder="Please enter confirm password" autocomplete="off">
                             <x-error name="confirmPassword"/>
                         </div>
                     </div>
@@ -68,11 +68,6 @@
                 }
             });
         })
-        $(function () {
-            $("#main_form").submit(function () {
-                $('#loader').removeClass("d-none");
-            });
-        });
     </script>
 @endsection
 
